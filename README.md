@@ -25,16 +25,17 @@ I then ran through the analysis again.
    -  The average overall percentage went down by .3%.
    
 - **How Thomas High School was affected in relation to the other schools:**
+
 Thomas High School was not affected, as the margin was so slight that it stayed the second top school.
 
   *Before:*
-  
+
   ![](./Resources/before_school_summary.png)  
-  
+
   *After:*
-  
+
   ![](./Resources/aschool_summary.png)  
-  
+
 - **How replacing the ninth grade scores affected the following**:
 
   - Math and reading scores by grade: 9th graders for Thomas High School had none; nothing else was changed.
