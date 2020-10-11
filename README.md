@@ -24,7 +24,7 @@ I then ran through the analysis again.
    -  The average passing reading percentage went down by .3%.
    -  The average overall percentage went down by .3%.
    
-- **How Thomas High School was affected in relation to the other schools: **
+- **How Thomas High School was affected in relation to the other schools:**
 Thomas High School was not affected, as the margin was so slight that it stayed the second top school.
 
   *Before:*
