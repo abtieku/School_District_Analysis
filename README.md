@@ -1,7 +1,7 @@
 # School District Analysis
 
 ## Overview 
-The school board has notified Maria that there is evidence of academic dishonesty with regards to the ninth grade math and reading scores at Thomas High School. Those scores need to be excluded, and the school board requested to have the analysis run again. 
+The school board notified Maria that there is evidence of academic dishonesty with regards to the ninth grade math and reading scores at Thomas High School. Those scores needed to be excluded, and the school board requested to have the analysis run again. 
 
 To do this, I used Python in Jupyter Notebooks. My input files were schools_complete.csv and students. complete.csv. 
 ## Results
@@ -12,18 +12,19 @@ student_data_df.loc[(student_data_df["school_name"] == "Thomas High School") & (
 student_data_df.loc[(student_data_df["school_name"] == "Thomas High School") & (student_data_df["grade"] == "9th"), "math_score"]=np.nan 
 ```
 I then ran through the analysis again.
--  **The district summary was affected in this way:**
+-  **How the district summary was affected:**
 	
 	- Passing math percentages were down by .2%.
 	- Passing reading percentages were down by .1%.
 	- Overall math and reading percentages were down by .3%.
 	
--  **The school summary was affected in this way**:
+- **How the school summary was affected:**
+  
    - The average passing math percentage went down by .5%.
    -  The average passing reading percentage went down by .3%.
    -  The average overall percentage went down by .3%.
    
-- **How did it affect Thomas High School in relation to the other schools? **
+- **How Thomas High School was affected in relation to the other schools: **
 Thomas High School was not affected, as the margin was so slight that it stayed the second top school.
 
   *Before:*
@@ -37,9 +38,9 @@ Thomas High School was not affected, as the margin was so slight that it stayed 
 - **How replacing the ninth grade scores affected the following**:
 
   - Math and reading scores by grade: 9th graders for Thomas High School had none; nothing else was changed.
-  - Scores by school spending: No change
-  - Scores by school size: No change
-  - Scores by school type: No change
+  - Scores by school spending: No change.
+  - Scores by school size: No change.
+  - Scores by school type: No change.
 
 ## Summary
 There are four major changes to be made in the updated school district analysis:
