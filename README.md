@@ -3,27 +3,30 @@
 ## Overview 
 The school board notified Maria that there is evidence of academic dishonesty with regards to the ninth grade math and reading scores at Thomas High School. Those scores needed to be excluded, and the school board requested to have the analysis run again. 
 
-To do this, I used Python in Jupyter Notebooks. My input files were schools_complete.csv and students. complete.csv. 
+To do this, I used PythonData in Jupyter Notebooks. My input files were:
+
+- schools_complete.csv
+- students. complete.csv
+
 ## Results
-What I did first was replace the 9th grade scores at Thomas High School with nulls. I used the numpy Pandas library for this task. After loading the library, I used loc to find the Thomas High School ninth graders, and  The code was:
+First, I excluded the 9th grade scores at Thomas High School by replacing their grades with nulls . To do this, I used the numpy Pandas library. After loading the library, I used loc to find the Thomas High School ninth graders and replace their scores with np.nan. The code was:
 
 ```
 student_data_df.loc[(student_data_df["school_name"] == "Thomas High School") & (student_data_df["grade"] == "9th"), "reading_score"]=np.nan 
 student_data_df.loc[(student_data_df["school_name"] == "Thomas High School") & (student_data_df["grade"] == "9th"), "math_score"]=np.nan 
 ```
-I then ran through the analysis again.
+Then I ran through the analysis again.
 -  **How the district summary was affected:**
 	
-	- Passing math percentages were down by .2%.
-	- Passing reading percentages were down by .1%.
-	- Overall math and reading percentages were down by .3%.
+	- The passing math percentage went down by .2%.
+	- The passing reading percentage went down by .3%.
+	- The overall passing percentage went down by .1%.
 	
-- **How the school summary was affected:**
+- **How the school summary was affected (Thomas High School):**
+  - The passing math percentage went down by .1%.
+   -  The passing reading percentage went down by .3%.
+   -  The overall percentage went down by .3%.
   
-   - The average passing math percentage went down by .5%.
-   -  The average passing reading percentage went down by .3%.
-   -  The average overall percentage went down by .3%.
-   
 - **How Thomas High School was affected in relation to the other schools:**
 
 Thomas High School was not affected, as the margin was so slight that it stayed the second top school.
@@ -38,18 +41,15 @@ Thomas High School was not affected, as the margin was so slight that it stayed 
 
 - **How replacing the ninth grade scores affected the following**:
 
-  - Math and reading scores by grade: 9th graders for Thomas High School had none; nothing else was changed.
-  - Scores by school spending: No change.
-  - Scores by school size: No change.
-  - Scores by school type: No change.
+  - Math and reading scores by grade: 9th graders for Thomas High School were excluded; nothing else was changed.
+  - Scores by school spending: There was no change.
+  - Scores by school size: There was no change.
+  - Scores by school type: There was no change.
 
 ## Summary
-There are four major changes to be made in the updated school district analysis:
-- Average math scores went down by .5%.
-- Average reading scores went down by .3%.
-- Overall scores went down by .3%.
-
-I am not sure if it was worth our while since the 9th grade math scores were such a small percentage of the total.
+The major changes to be made in the updated school district analysis are:
+- The District Summary went down slightly for passing math, reading, and overall percentages.
+- On the School Summary, Thomas High School remained in its position as second top school. However, its statistics  went down slightly for passing math, reading, and overall percentages.
 
 
 
